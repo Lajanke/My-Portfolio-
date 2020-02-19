@@ -1,17 +1,26 @@
-body {
+
+.Main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-a {
-    padding: 5px 5px 5px 5px;
+p {
+    padding: 10px 30px 10px 30px; 
+   
 }
 
-p {
-    padding: 10px 30px 10px 30px;
+a {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 img {
     padding: 5px 5px 5px 5px;
+}
+
+.Navbar {
+    background-color: #c2f0eb;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
