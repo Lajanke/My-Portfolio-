@@ -5,14 +5,28 @@
     align-items: center;
 }
 
+.title {
+    background-image: url(/images/Cloud\ inversion..jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 25%;
+    padding-top: 10%; 
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+}
+
 p {
     padding: 10px 30px 10px 30px; 
-   
+    background-image: linear-gradient(to bottom right, white, #6ba2ae);
+    color: #383838;
 }
 
 a {
     padding-left: 5px;
     padding-right: 5px;
+    color: #383838 !important;
+    font-weight: 500;
 }
 
 img {
@@ -20,7 +34,9 @@ img {
 }
 
 .Navbar {
-    background-color: #c2f0eb;
+    background-image: linear-gradient(to right, white, #6ba2ae);
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 100%;
+    text-transform: uppercase;
 }
