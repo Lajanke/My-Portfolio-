@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 .title {
@@ -14,29 +15,109 @@
     margin: 0px;
     width: 100%;
     text-align: center;
+    font-family: Roboto, sans-serif;
+    color: #737373;
+    font-weight: 300;
+    font-size: 10vw;
+}
+
+ .title2 {
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    color: #737373;
+    font-weight: 300;
+    font-size: 10vw;
 }
 
 p {
-    padding: 10px 30px 10px 30px; 
+    padding: 10px;
     background-image: linear-gradient(to bottom right, white, #6ba2ae);
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
     color: #383838;
+    margin: 0;
 }
 
 a {
     padding-left: 5px;
     padding-right: 5px;
-    color: #383838 !important;
-    font-weight: 500;
+    color: #383838;
+    font-weight: 300;
+    text-decoration: none;
 }
 
-img {
-    padding: 5px 5px 5px 5px;
+a:hover {
+    color: #db9935;
 }
 
-.Navbar {
+.navbar {
     background-image: linear-gradient(to right, white, #6ba2ae);
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
+    font-family: Roboto, sans-serif;
+    color: #383838;
     text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1200px) {
+    .title {
+        font-size: 8vw;
+    }
+
+    .title2 {
+        font-size: 8vw;
+    }
+}
+
+/*responsive menu*/
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navabr-links li a {
+    text-decoration: none;
+    color: #383838;
+    padding: 1rem;
+    display: block;
+}
+
+.toggle {
+    position: absolute;
+    top: .85rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #383838;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 21px;
+    }
+    .toggle {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
 }
