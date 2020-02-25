@@ -31,7 +31,7 @@
     font-size: 10vw;
 }
 
-p {
+.Main p {
     padding: 10px;
     background-image: linear-gradient(to bottom right, white, #6ba2ae);
     font-family: Roboto, sans-serif;
@@ -44,7 +44,9 @@ a {
     padding-left: 5px;
     padding-right: 5px;
     color: #383838;
+    font-family: Roboto, sans-serif;
     font-weight: 300;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -58,11 +60,12 @@ a:hover {
     padding-bottom: 5px;
     width: 100%;
     font-family: Roboto, sans-serif;
+    font-weight: 300;
     color: #383838;
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .title {
         font-size: 8vw;
     }
@@ -109,15 +112,83 @@ a:hover {
     border-radius: 10px;
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        height: 21px;
+/*Project grid*/
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 95vh;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.boxes li {
+    margin: 0;
+    padding: 10vw;
+    background-image: linear-gradient(to bottom right, white, #6ba2ae);
+}
+
+.boxes li:hover {
+    background-image: linear-gradient(to top left, white, #6ba2ae);
+}
+
+ul {
+    list-style: none;
+}
+
+.boxes p {
+    color: black;
+}
+
+@media (max-width: 1250px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
+}
+
+@media (max-width: 550px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+        height: 95vh;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .boxes li {
+        height: 50vw;
+    }
+
+
     .toggle {
         display: flex;
     }
 
     .navbar-links {
         display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 21px;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 }
+
