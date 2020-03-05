@@ -1,9 +1,16 @@
+/*html, body {
+    background-image: linear-gradient(to bottom, #6ba2ae, #1d3459);
+    background-repeat: no-repeat;
+    margin: 0px;
+    width: 100%;
+    min-height: 100%;
+}
 
 .Main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    width: 100%;
 }
 
 .title {
@@ -45,24 +52,13 @@ a {
     padding-right: 5px;
     color: #383838;
     font-family: Roboto, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 a:hover {
     color: #db9935;
-}
-
-.navbar {
-    background-image: linear-gradient(to right, white, #6ba2ae);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
-    font-family: Roboto, sans-serif;
-    font-weight: 300;
-    color: #383838;
-    text-transform: uppercase;
 }
 
 @media (min-width: 1200px) {
@@ -77,6 +73,24 @@ a:hover {
 
 /*responsive menu*/
 
+.navbar {
+    background-color: #5a92af;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 35px;
+}
+
+.navbar-links {
+    background-color: #5a92af;
+}
+
 .navbar-links ul {
     margin: 0;
     padding: 0;
@@ -87,11 +101,13 @@ a:hover {
     list-style: none;
 }
 
-.navabr-links li a {
+.navbar-links ul li a {
     text-decoration: none;
-    color: #383838;
+    color: #fff;
     padding: 1rem;
     display: block;
+    font-family: oxanium, sans-serif;
+    font-weight: 400;
 }
 
 .toggle {
@@ -113,40 +129,47 @@ a:hover {
 }
 
 /*Project grid*/
+
 .boxes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: 95vh;
+    height: 100%;
     margin: 0px;
     padding: 0px;
 
 }
 
 .boxes li {
-    margin: 0;
-    padding: 10vw;
-    background-image: linear-gradient(to bottom right, white, #6ba2ae);
+    margin: 10px;
+    padding: 0px;
+    max-width: 300px;
+    max-height: 250px;
+    background-image: linear-gradient(to bottom right, #6ba2ae, #1d3459);
 }
 
 .boxes li:hover {
-    background-image: linear-gradient(to top left, white, #6ba2ae);
+    background-image: linear-gradient(to top left, #6ba2ae, #1d3459);
 }
 
 ul {
     list-style: none;
+    padding: 100%;
+}
+
+.box_text a {
+    font-weight: 300;
 }
 
 .boxes p {
     color: black;
+    text-align: center;
 }
 
 @media (max-width: 1250px) {
     .boxes {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
@@ -154,17 +177,15 @@ ul {
     .boxes {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         width: 100%;
-        height: 95vh;
         margin: 0px;
         padding: 0px;
     }
 
     .boxes li {
-        height: 50vw;
+        height: 80vw;
     }
-
 
     .toggle {
         display: flex;
@@ -178,7 +199,7 @@ ul {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        min-height: 21px;
+        min-height: 35px;
     }
 
     .navbar-links ul {
@@ -190,5 +211,86 @@ ul {
     .navbar-links.active {
         display: flex;
     }
+}
+
+/*One page*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.section {
+    height: calc(100% - 75px);
+    width: calc(100% - 30px);
+    margin: 0;
+    padding: 15px;
+}
+
+#home {
+    background-color: #1af0de;
+    margin-top: 45px;
+}
+
+#about {
+    background-color: #86c1d4;
+}
+
+#work {
+    background-color: #9cd9de;
+}
+
+#contact {
+    background-color: #d9f9f4;
+}
+
+.section h1 {
+    margin: 0;
+}
+
+.welcome {
+    text-align: left;
+    padding-top: 20vh;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: oxanium, sans-serif;
+    font-weight: 400;
+    color: darkslategrey;
+    font-size: 10vw;
+}
+
+#home h2 {
+    font-family: oxanium, sans-serif;
+    font-weight: 400;
+    color: slategray;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#home h3 {
+    font-family: oxanium, sans-serif;
+    font-weight: 300;
+    color: slategray;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h1 {
+    font-family: oxanium, sans-serif;
+    font-weight: 300;
+    color: darkslategray;
+    font-size: 10vw;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#about h3 {
+    font-family: oxanium, sans-serif;
+    font-weight: 300;
+    color: slategray;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
