@@ -5,9 +5,9 @@ toggle.addEventListener("click", () => {
     navBarLinks.classList.toggle("active");
 });
 
-var shiftWindow = function() {
+var shiftWindow = function () {
     if ((window.innerHeight + window.pageYOffset) <= document.body.scrollHeight) {
-        scrollBy(0, -45); 
+        scrollBy(0, -45);
     }
     navBarLinks.classList.toggle("active");
 };
