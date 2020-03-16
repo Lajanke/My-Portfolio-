@@ -13,3 +13,4 @@ var shiftWindow = function () {
 };
 if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
+

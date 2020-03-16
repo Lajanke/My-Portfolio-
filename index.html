@@ -12,7 +12,24 @@
     <link href="https://fonts.googleapis.com/css?family=Oxanium:200,300,400,500,600,700,800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/57fb52a8f6.js" crossorigin="anonymous"></script>
-    <script src="toggle.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init('user_hsUjElcNK3b3Y1rfYVORu');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                console.log('hi')
+                event.preventDefault();
+                // generate the contact number value
+                //this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('gmail', 'portfolio', this);
+            });
+        }
+    </script>
+    <script src="toggle.js" defer></script>   
 </head>
 
 <body>
@@ -73,19 +90,28 @@
     <section id="contact" class="section">
         <h1>Get in touch</h1>
         <div class="container">
-            <form id="contactForm" action="" method="post">
+            <!--<form id="contactForm">
                 <fieldset>
-                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    <input placeholder="Your name" type="text" required autofocus>
                 </fieldset>
                 <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    <input placeholder="Your Email Address" type="email" required>
                 </fieldset>
                 <fieldset>
-                    <textarea placeholder="Your Message Here...." tabindex="5" required></textarea>
+                    <textarea placeholder="Your Message Here...." required></textarea>
                 </fieldset>
                 <fieldset>
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                 </fieldset>
+            </form>-->
+            <form id="contact-form">
+                <label>Name</label>
+                <input type="text" name="user_name">
+                <label>Email</label>
+                <input type="email" name="user_email">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send">
             </form>
         </div>
 
