@@ -88,13 +88,31 @@
     width: calc(100% - 25px);
     max-width: 1000px;
     height: 300px;
-    background-image: linear-gradient(to bottom right, #6ba2ae, #1d3459);
+    /*background-image: linear-gradient(to bottom right, #6ba2ae, #1d3459);*/
     border-radius: 5px;
     box-shadow: 7px 4px 22px -5px rgba(71,71,71,1);
 }
 
+.githubBox {
+    background-color: #128399;
+    background-image: url(/images/keyboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    
+}
+
+.researchGateBox {
+    background-color: #128399;
+    background-image: url(/images/benzeneringscrop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
 .boxes li:hover {
-    background-image: linear-gradient(to top left, #6ba2ae, #1d3459);
+    /*background-image: linear-gradient(to top left, #6ba2ae, #1d3459);*/
+    background-image: none;
 }
 
 ul a {
@@ -105,10 +123,40 @@ ul a {
     text-align: center;
 }
 
-.boxText {
+#githubTitle {
     display: block;
     margin: auto;
-    padding: auto;
+    padding: 10px 10px 10px 20px;
+    font-size: 50px;
+    text-align: left;
+    color: #fff;
+}
+
+.githubBox p {
+    display: block;
+    padding: 0px 10px 10px 20px;
+    font-size: 18px;
+    text-align: left;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+#researchGateTitle {
+    display: block;
+    margin: auto;
+    padding: 10px 10px 10px 20px;
+    font-size: 50px;
+    text-align: left;
+    color: #fff;
+}
+
+.researchGateBox p {
+    display: block;
+    padding: 0px 10px 10px 20px;
+    font-size: 18px;
+    text-align: left;
+    min-width: 300px;
+    max-width: 500px;
 }
 
 /*One page*/
@@ -227,7 +275,7 @@ footer {
 }
 
 #home i {
-    color: darkslategray;
+    color: #128399;
     padding: 10px;
     margin-left: 0;
 }
@@ -253,7 +301,7 @@ input {
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 fieldset {
-	border: medium none !important;
+    border: medium none !important;
 	margin: 0 0 10px;
 	width: 100%;
 	padding: 0;
@@ -340,7 +388,8 @@ fieldset {
         width: calc(100% - 25px);
         max-width: 500px;
         height: 250px;
-        background-image: linear-gradient(to bottom right, #6ba2ae, #1d3459);
+        background-image: none;
+        background-color: #128399;
     }
 
     .toggle {
@@ -376,9 +425,24 @@ fieldset {
         display: flex;
     }
 
-    p {
-        font-size: 18px !important;
+    .aboutp {
+        font-size: 15px !important;
     }
 
+    #githubTitle {
+        font-size: 35px;
+    }
 
+    #researchGateTitle {
+        font-size: 35px;
+    }
+
+    .githubBox p {
+        font-size: 15px;
+    }
+
+    .researchGateBox p {
+        font-size: 15px;
+    }
+    
 }
