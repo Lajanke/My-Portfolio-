@@ -4,36 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Laura Kenny</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
+    <!--Fonts and icons-->
     <link href="https://fonts.googleapis.com/css?family=Oxanium:200,300,400,500,600,700,800&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/57fb52a8f6.js" crossorigin="anonymous"></script>
+    <!--EmailJS-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
     <script type="text/javascript">
+
         (function () {
             emailjs.init('user_hsUjElcNK3b3Y1rfYVORu');
         })();
+
     </script>
     <script type="text/javascript">
+
         window.onload = function () {
             document.getElementById('contactForm').addEventListener('submit', function (event) {
+
                 event.preventDefault();
                 emailjs.sendForm('gmail', 'portfolio', this)
                     .then(function (response) {
+
                         console.log('SUCCESS!', response.status, response.text);
+                        alert("Thank you for getting in touch.");
                     }, function (error) {
+
                         console.log('FAILED...', error);
+                        alert("Sorry, there was a problem with submitting the form.");
                     });
-                //document.getElementById("endTimeLabel").style.display = 'none';
-                //document.getElementById("endTimeLabel").style.display = 'block';
             });
         }
     </script>
+    <!--Invisible Recaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+        function onSubmit(token) {
+            document.getElementById("contactForm").submit();
+        }   
+    <!--Page specific JS--> 
     <script src="toggle.js" defer></script>
+
 </head>
 
 <body>

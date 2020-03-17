@@ -283,12 +283,6 @@ footer {
     color: #fff !important;
 }
 
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 6vw;
-    }
-}
-
 /*countdown*/
   
   .countdown h1 {
@@ -337,7 +331,6 @@ footer {
     position: absolute;
     right: 25px;
   }
-
 
 /*contact form*/
 
@@ -422,6 +415,12 @@ fieldset {
 }
 
 /*media queries*/
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6vw;
+    }
+}
 
 @media (max-width: 750px) {
 
