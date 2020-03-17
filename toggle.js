@@ -1,9 +1,17 @@
+/*navbar toggle*/
+
 const toggle = document.getElementsByClassName("toggle")[0];
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];
+const toggleicon = document.getElementById("toggleicon");
 
 toggle.addEventListener("click", () => {
     navBarLinks.classList.toggle("active");
+    toggleicon.classList.toggle("fa-bars");
+    toggleicon.classList.toggle("fa-times");
 });
+
+
+/*Scrolling*/
 
 var shiftWindow = function () {
     if ((window.innerHeight + window.pageYOffset) <= document.body.scrollHeight) {
