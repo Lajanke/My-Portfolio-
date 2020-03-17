@@ -5,7 +5,7 @@ const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const toggleicon = document.getElementById("toggleicon");
 
 toggle.addEventListener("click", () => {
-    navBarLinks.classList.toggle("active");
+    navBarLinks.classList.toggle("active").slidedown(1000);
     toggleicon.classList.toggle("fa-bars");
     toggleicon.classList.toggle("fa-times");
 });
