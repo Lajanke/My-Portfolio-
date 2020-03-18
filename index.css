@@ -200,6 +200,7 @@ html, body {
 #contact {
     background-color: #b8ebff;
     position: relative;
+    padding-top: 60px;
 }
 
 .section h1 {
