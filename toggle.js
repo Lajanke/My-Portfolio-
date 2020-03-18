@@ -13,7 +13,8 @@ toggle.addEventListener("click", () => {
 /*Scrolling*/
 
 var shiftWindow = function () {
-    var number = Math.floor(pageYOffset);
+    
+    /*var number = Math.floor(pageYOffset);
     console.log(number);
     console.log(pageYOffset);
     if (number === (Math.floor(pageYOffset - 45))) {
@@ -21,16 +22,18 @@ var shiftWindow = function () {
         number = Math.floor(pageYOffset);
     }
     else if ((window.innerHeight + window.pageYOffset) <= document.body.scrollHeight) {
-        scrollBy(0, -45);
-        number = Math.floor((pageYOffset));
-        console.log(number);
-    }
+        scrollBy(0, -45);*/
+        
+       // number = Math.floor((pageYOffset));
+       // console.log(number);
+    //}
     navBarLinks.classList.toggle("active");
     toggleicon.classList.toggle("fa-times");
 };
 
 if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
+
 
 /*countdown*/
 

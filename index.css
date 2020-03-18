@@ -180,7 +180,7 @@ html, body {
 
 #home {
     background-color: #29fff4;
-    padding-top: 45px;
+    padding-top: 60px;
 }
 
 #about {
@@ -189,10 +189,12 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay, soft-light;
+    padding-top: 60px;
 }
 
 #work {
     background-color: #9cd9de;
+    padding-top: 60px;
 }
 
 #contact {
