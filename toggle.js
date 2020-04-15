@@ -62,4 +62,3 @@ x = setInterval(function () {
 
 }, second)
 
-
