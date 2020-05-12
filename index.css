@@ -209,13 +209,14 @@ html, body {
 
 .welcome {
     text-align: left;
-    padding-top: 16vh;
+    padding-top: 10vh;
     padding-left: 25px;
     padding-right: 25px;
     font-family: oxanium, sans-serif;
     font-weight: 400;
     color: darkslategrey;
-    font-size: 9vw;
+    font-size: 8vh;
+    font-size: 8vw;
 }
 
 #home h2 {
@@ -224,6 +225,19 @@ html, body {
     color: slategray;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.checklist li {
+    display: inline-block;
+    font-family: oxanium, sans-serif;
+    margin: 0px;
+    color: darkslategray;
+}
+
+ul.checklist {
+    padding-left: 25px;
+    margin: 0px;
+    font-size: 15px;
 }
 
 #home h3 {
@@ -546,6 +560,10 @@ fieldset {
 
     .navbar-links.active {
         display: flex;
+    }
+
+    ul.checklist {
+        font-size: 12px;
     }
 
     .aboutp {
