@@ -95,13 +95,40 @@ div {
     box-shadow: 7px 4px 22px -5px rgba(71,71,71,1);
 }
 
+.astrologBox {
+    background-color: #128399;
+    background-image: url(images/23-04-20\ Star\ trails.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light; 
+}
+
+.astrologBox img {
+    max-height: 225px;
+    max-width: 320px;
+    justify-self: center;
+    margin: auto;
+}
+
+.astroWebPage {
+    padding-right: 25px;
+}
+
+.astro {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .githubBox {
     background-color: #128399;
     background-image: url(images/keyboard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: luminosity;
-    
+    background-blend-mode: luminosity;    
 }
 
 .researchGateBox {
@@ -122,6 +149,24 @@ ul a {
     font-family: oxanium, sans-serif;
     color: #fff;
     text-align: center;
+}
+
+#astroLogTitle {
+    display: block;
+    margin: auto;
+    padding: 10px 10px 10px 20px;
+    font-size: 2.2rem;
+    text-align: left;
+    color: #fff;
+}
+
+.astrologBox p {
+    display: block;
+    padding: 0px 10px 10px 20px;
+    font-size: 1rem;
+    text-align: left;
+    min-width: 200px;
+    max-width: 500px;
 }
 
 #githubTitle {
@@ -504,6 +549,14 @@ fieldset {
     li.seconds {
         display: none;
     }
+
+    .astroWebPage {
+        display: none;
+    }
+
+    .astro {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 550px) {
@@ -588,6 +641,10 @@ fieldset {
 
     .researchGateBox p {
         font-size: 15px;
+    }
+
+    .astroMobile {
+        padding-right: 10px;
     }
     
 }

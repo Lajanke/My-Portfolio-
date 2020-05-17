@@ -40,10 +40,10 @@
     </script>
     <!--Invisible Recaptcha-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        function onSubmit(token) {
-            document.getElementById("contactForm").submit();
-        }   
-    <!--Page specific JS--> 
+    function onSubmit(token) {
+    document.getElementById("contactForm").submit();
+    }
+    <!--Page specific JS-->
     <script src="toggle.js" defer></script>
 
 </head>
@@ -78,7 +78,8 @@
         <div class="icons">
             <a href="https://www.linkedin.com/in/laura-kenny-647299122/"><i class="fab fa-linkedin fa-3x"></a></i>
             <a href="https://github.com/Lajanke"><i class="fab fa-github-square fa-3x"></a></i>
-            <a href="https://www.researchgate.net/profile/Laura_Kenny5/research"><i class="fab fa-researchgate fa-3x"></a></i>
+            <a href="https://www.researchgate.net/profile/Laura_Kenny5/research"><i
+                    class="fab fa-researchgate fa-3x"></a></i>
             <div class="countdown">
                 <h1>Graduation</h1>
                 <i id="cap_icon" class="fas fa-graduation-cap fa-2x"></i>
@@ -96,22 +97,23 @@
         <h1>About me</h1>
         <div class="about_container">
             <p class="aboutp">I am a student at Northcoders living near Manchester, UK. I will be
-            spending 12 weeks at Northcoders gaining skills and knowledge in full stack web development
-            with a focus on JavaScript. I have been learning JavaScript through introductory courses with Northcoders and by using free online
-            platforms. I hope to find a role as a junior developer on completion of the course. </p>
+                spending 12 weeks at Northcoders gaining skills and knowledge in full stack web development
+                with a focus on JavaScript. I have been learning JavaScript through introductory courses with
+                Northcoders and by using free online
+                platforms. I hope to find a role as a junior developer on completion of the course. </p>
 
             <p class="aboutp">Languages and skills I am working on:</p>
-                <ul>
-                    <li><span></span>JavaScript</li>
-                    <li><span></span>CSS</li>
-                    <li><span></span>HTML</li>
-                    <li><span></span>postgreSQL</li>
-                    <li><span></span>MVC</li>
-                    <li><span></span>TDD</li>
-                </ul>
-            <hr>    
-            <p class="aboutp">I have a BSc(Hons) in Forensic science and 
-            over 12 years experience in analytical chemistry.</p>
+            <ul>
+                <li><span></span>JavaScript</li>
+                <li><span></span>CSS</li>
+                <li><span></span>HTML</li>
+                <li><span></span>postgreSQL</li>
+                <li><span></span>MVC</li>
+                <li><span></span>TDD</li>
+            </ul>
+            <hr>
+            <p class="aboutp">I have a BSc(Hons) in Forensic science and
+                over 12 years experience in analytical chemistry.</p>
             <hr>
             <p class="aboutp">I have a keen interest in photography (landscape and astrophotography).
                 Click the icons below to see some of my photos.</p>
@@ -126,6 +128,19 @@
         <h1>Work</h1>
         <div class="grid">
             <ul class="boxes">
+                <a href="https://astro-log.herokuapp.com/">
+                    <li class="astrologBox">
+                        
+                        <div class='astro'>
+                           <span>
+                            <h1 id="astroLogTitle">Astro-log</h1>
+                            <p class="rightp">A small app built with React <br> <br> Click here to see the app.</p>
+                           </span>
+                            <img class="astroMobile" src="images/astro-log_screenshot.jpg" alt="mobile sceenshot">
+                            <img class="astroWebPage" src="images/Screenshot from 2020-05-17 16-56-52.png" alt="web page screenshot">
+                        </div>
+                    </li>
+                </a>
                 <a href="https://github.com/Lajanke">
                     <li class="githubBox">
                         <h1 id="githubTitle">GitHub</h1>
