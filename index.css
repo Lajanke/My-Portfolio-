@@ -552,10 +552,12 @@ fieldset {
 
     .astroWebPage {
         display: none;
+        overflow: hidden;
     }
 
     .astro {
         grid-template-columns: repeat(2, 1fr);
+        overflow: hidden;
     }
 }
 
@@ -645,6 +647,7 @@ fieldset {
 
     .astroMobile {
         padding-right: 10px;
+        overflow: hidden;
     }
     
 }
