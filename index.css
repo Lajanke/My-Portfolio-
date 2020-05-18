@@ -125,7 +125,7 @@ div {
 
 .githubBox {
     background-color: #128399;
-    background-image: url(images/keyboard.jpg);
+    background-image: url(images/bwkeybard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: luminosity;    
@@ -140,7 +140,7 @@ div {
 }
 
 .boxes li:hover {
-    background-image: none;
+    background-blend-mode: multiply;
 }
 
 ul a {
