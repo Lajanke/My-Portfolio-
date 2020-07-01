@@ -110,11 +110,11 @@ div {
     margin: auto;
 }
 
-.astroWebPage {
+.projectWebPage {
     padding-right: 25px;
 }
 
-.astro {
+.project {
     display: grid;
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -123,20 +123,79 @@ div {
     padding: 0px;
 }
 
-.githubBox {
+.dyrtBox {
     background-color: #128399;
-    background-image: url(images/bwkeybard.jpg);
+    background-image: url(images/trees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;    
+}
+
+.dyrtBox img {
+    max-height: 225px;
+    max-width: 320px;
+    justify-self: center;
+    margin: auto;
+}
+
+.dyrtBEBox {
+    background-color: #128399;
+    background-image: url(images/sand2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;  
+}
+
+.dyrtBEBox img {
+    max-height: 225px;
+    max-width: 320px;
+    justify-self: center;
+    margin: auto;
+}
+
+.starrySkiesBox {
+    background-color: #128399;
+    background-image: url(images/23-04-20\ Star\ trails.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;     
+}
+
+.starrySkiesBox img {
+    max-height: 225px;
+    max-width: 320px;
+    justify-self: center;
+    margin: auto;
+}
+
+.natEventsBox {
+    background-color: #128399;
+    background-image: url(images/lightning.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: luminosity;    
 }
 
-.researchGateBox {
+.natEventsBox img {
+    max-height: 225px;
+    max-width: 320px;
+    justify-self: center;
+    margin: auto;
+}
+
+.ctBox {
     background-color: #128399;
-    background-image: url(images/benzeneringscrop.jpg);
+    background-image: url(images/soup.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: soft-light;
+    background-blend-mode: soft-light;    
+}
+
+.ctBox img {
+    max-height: 225px;
+    max-width: 320px;
+    justify-self: center;
+    margin: auto;
 }
 
 .boxes li:hover {
@@ -161,13 +220,40 @@ ul a {
     text-align: center;
 }
 
-#astroLogTitle {
+#projectTitle {
     display: block;
     margin: auto;
     padding: 10px 10px 10px 20px;
     font-size: 2.2rem;
     text-align: left;
     color: #fff;
+}
+
+.dyrtBox p {
+    display: block;
+    padding: 0px 10px 10px 20px;
+    font-size: 1rem;
+    text-align: left;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.dyrtBEBox p {
+    display: block;
+    padding: 0px 10px 10px 20px;
+    font-size: 1rem;
+    text-align: left;
+    min-width: 200px;
+    max-width: 500px;
+}
+
+.starrySkiesBox p {
+    display: block;
+    padding: 0px 10px 10px 20px;
+    font-size: 1rem;
+    text-align: left;
+    min-width: 200px;
+    max-width: 500px;
 }
 
 .astrologBox p {
@@ -179,16 +265,7 @@ ul a {
     max-width: 500px;
 }
 
-#githubTitle {
-    display: block;
-    margin: auto;
-    padding: 10px 10px 10px 20px;
-    font-size: 50px;
-    text-align: left;
-    color: #fff;
-}
-
-.githubBox p {
+.natEventsBox p {
     display: block;
     padding: 0px 10px 10px 20px;
     font-size: 18px;
@@ -197,16 +274,7 @@ ul a {
     max-width: 500px;
 }
 
-#researchGateTitle {
-    display: block;
-    margin: auto;
-    padding: 10px 10px 10px 20px;
-    font-size: 50px;
-    text-align: left;
-    color: #fff;
-}
-
-.researchGateBox p {
+.ctBox p {
     display: block;
     padding: 0px 10px 10px 20px;
     font-size: 18px;
@@ -479,12 +547,12 @@ fieldset {
 
 @media (max-width: 750px) {
 
-    .astroWebPage {
+    .projectWebPage {
         display: none;
         overflow: hidden;
     }
 
-    .astro {
+    .project {
         grid-template-columns: repeat(2, 1fr);
         overflow: hidden;
     }
@@ -552,23 +620,15 @@ fieldset {
         font-size: 12px;
     }
 
-    #githubTitle {
+    #projectTitle {
         font-size: 35px;
     }
 
-    #researchGateTitle {
-        font-size: 35px;
-    }
-
-    .githubBox p {
+    .ctBox p {
         font-size: 15px;
     }
 
-    .researchGateBox p {
-        font-size: 15px;
-    }
-
-    .astroMobile {
+    .projectMobile {
         padding-right: 10px;
         overflow: hidden;
     }
