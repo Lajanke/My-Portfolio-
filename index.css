@@ -148,7 +148,7 @@ div {
 
 .dyrtBEBox img {
     max-height: 225px;
-    max-width: 320px;
+    max-width: 300px;
     justify-self: center;
     margin: auto;
 }
@@ -579,6 +579,10 @@ fieldset {
         height: 250px;
     }
 
+    p.rightp {
+        font-size: 12px;
+    }
+
     .toggle {
         display: flex;
     }
@@ -621,16 +625,26 @@ fieldset {
     }
 
     #projectTitle {
-        font-size: 35px;
+        font-size: 2rem;
     }
 
-    .ctBox p {
-        font-size: 15px;
-    }
 
     .projectMobile {
         padding-right: 10px;
         overflow: hidden;
     }
     
+    .project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    img.projectMobile {
+        max-width: 100px;
+    }
+
+    .project span {
+        max-width: 225px;
+    }
 }
