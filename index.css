@@ -143,6 +143,16 @@ div {
     background-blend-mode: multiply;
 }
 
+.text_link {
+    text-decoration: none;
+    color: rgb(31, 53, 53);
+    font-weight: 700;
+}
+
+.text_link:hover {
+    color: #128399;
+}
+
 ul a {
     list-style: none;
     text-decoration: none;
@@ -203,6 +213,11 @@ ul a {
     text-align: left;
     min-width: 250px;
     max-width: 500px;
+}
+
+.skills_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /*One page*/
@@ -270,19 +285,6 @@ html, body {
     color: slategray;
     padding-left: 25px;
     padding-right: 25px;
-}
-
-.checklist li {
-    display: inline-block;
-    font-family: oxanium, sans-serif;
-    margin: 0px;
-    color: darkslategray;
-}
-
-ul.checklist {
-    padding-left: 25px;
-    margin: 0px;
-    font-size: 15px;
 }
 
 #home h3 {
@@ -356,10 +358,6 @@ footer {
     margin-left: 0;
 }
 
-#cap_icon {
-    color: #fff !important;
-}
-
 #about i {
     color: rgb(31, 53, 53);
     padding: 10px;
@@ -382,55 +380,6 @@ footer {
 #contact i {
     color:  #128399;
     padding: 10px;
-}
-
-/*countdown*/
-  
-.countdown h1 {
-    font-family: oxanium, sans-serif;
-    font-weight: 300;
-    color: #fff;
-    font-size: 50px;
-    text-transform: uppercase;
-    padding: 5px;
-}
-
-.countdown ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-.countdown_list li {
-    display: inline-block;
-    font-size: 25px;
-    list-style-type: none;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.countdown li span {
-    display: block;
-}
-
-.countdown i {
-    display: none;
-}
-
-#home.cap_icon {
-    color: #fff;
-}
-  
-.countdown {
-    background-color: #128399;
-    color: #fff;
-    font-family: oxanium, sans-serif;
-    text-align: center;
-    border: #128399;
-    border-style: solid;
-    border-radius: 10px 30px 10px;
-    box-shadow: 7px 4px 22px -5px rgba(71,71,71,1);
-    position: absolute;
-    right: 25px;
 }
 
 /*contact form*/
@@ -530,26 +479,6 @@ fieldset {
 
 @media (max-width: 750px) {
 
-    .countdown h1 {
-        display: none;
-    }
-
-    .countdown i {
-        display: block;
-    }
-
-    li.hours {
-        display: none;
-    }
-
-    li.minutes {
-        display: none;
-    }
-
-    li.seconds {
-        display: none;
-    }
-
     .astroWebPage {
         display: none;
         overflow: hidden;
@@ -580,8 +509,6 @@ fieldset {
         width: calc(100% - 25px);
         max-width: 500px;
         height: 250px;
-        /*background-image: none;
-        background-color: #128399;*/
     }
 
     .toggle {
@@ -617,16 +544,12 @@ fieldset {
         display: flex;
     }
 
-    ul.checklist {
-        font-size: 12px;
-    }
-
     .aboutp {
         font-size: 15px !important;
     }
 
     #about ul {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #githubTitle {
@@ -650,16 +573,4 @@ fieldset {
         overflow: hidden;
     }
     
-}
-
-@media (max-width: 350px) {
-
-    .countdown {
-        position: absolute;
-        right: 10px;
-    }
-
-    .countdown_list li {
-        font-size: 15px;
-    }
 }
