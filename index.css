@@ -75,6 +75,38 @@ li {
     font-size: 28px;
 }
 
+.homeAvatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.avatar {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+figure {
+    margin: 10px 20px 0 0;
+}
+
+figcaption {
+    font-size: 0.6rem;
+    text-align: center;
+    color: darkslategray;
+}
+
+figcaption a {
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 500;
+}
+
+figcaption a:hover {
+    text-decoration: none;
+    color: #128399;
+}
+
 /*Project grid*/
 
 .boxes {
@@ -97,21 +129,6 @@ li {
     height: 300px;
     border-radius: 5px;
     box-shadow: 7px 4px 22px -5px rgba(71,71,71,1);
-}
-
-.astrologBox {
-    background-color: #128399;
-    background-image: url(images/23-04-20\ Star\ trails.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: soft-light; 
-}
-
-.astrologBox img {
-    max-height: 225px;
-    max-width: 320px;
-    justify-self: center;
-    margin: auto;
 }
 
 .projectWebPage {
@@ -549,6 +566,11 @@ fieldset {
 
 @media (max-width: 550px) {
 
+    .avatar {
+        max-width: 150px;
+        border-radius: 50%;
+    }
+
     .boxes {
         display: grid;
         grid-template-columns: auto;
@@ -620,7 +642,6 @@ fieldset {
     #projectTitle {
         font-size: 1.5rem;
     }
-
 
     .projectMobile {
         padding-right: 10px;
