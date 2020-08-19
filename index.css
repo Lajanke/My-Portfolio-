@@ -144,6 +144,21 @@ figcaption a:hover {
     padding: 0px;
 }
 
+.erBox {
+    background-color: #128399;
+    background-image: url(images/combs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: soft-light;    
+}
+
+.erBox img {
+    max-height: 225px;
+    max-width: 320px;
+    justify-self: center;
+    margin: auto;
+}
+
 .dyrtBox {
     background-color: #128399;
     background-image: url(images/trees.jpg);
