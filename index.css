@@ -384,6 +384,7 @@ button {
     background-size: auto 40px;
     width: 100px;
     margin: 0;
+    color: rgba(0, 0, 0, 0);
 }
 
 button:hover {
