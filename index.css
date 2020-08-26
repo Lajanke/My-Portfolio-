@@ -375,6 +375,17 @@ button {
     box-shadow: 10px 10px 39px -16px rgba(71,71,71,1);
 }
 
+.googleButton {
+    background: url(https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png);
+    background-image: url(https://play.google.com/intl/en_gb/badges/static/images/badges/en_badge_web_generic.png);
+    border: 0px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: auto 40px;
+    width: 100px;
+    margin: 0;
+}
+
 button:hover {
     background-color: #9cd9de;
 }
